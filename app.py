@@ -10,9 +10,9 @@ count = 0
 def home(): 
     global count
     count = count + 1
-    RET_TEXT = 'Hello, World! ' + str(count)
+    RET_TEXT = 'Hello World! count= ' + str(count)
     return RET_TEXT
     
-##### Run the Flask instance, browse to http://<< Host IP or URL >>:5000 
+##### Run the Flask instance, browse to http://<< Host IP or URL >>:8080 
 if __name__ == "__main__":
-	app.run(host='0.0.0.0', port='5000')
+	app.run(host='0.0.0.0', port='8080')
